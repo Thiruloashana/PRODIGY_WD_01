@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>  
+    <section>
+        <nav id="mainNav">
+            <div class="logo">
+                <h1>SHOOZ</h1>
+            </div>
+
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/review.html">Review</a></li>
+                <li><a href="/services.html">Services</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </nav>
+    </section>
+
+    <div class="services">
+        <h1>our<span>services</span></h1>
+        <div class="services_cards">
+            <div class="services_box">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Fast Delivery</h3>
+            </div>
+
+            <div class="services_box">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>10 Days Replacement</h3>
+            </div>
+
+            <div class="services_box">
+                <i class="fa-solid fa-headset"></i>
+                <h3>24 x 7 Support</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_main">
+            <div class="tag">
+                <h1>Contact Us</h1>
+                <a href="tel:+123456789"><i class="fa-solid fa-phone"></i> +1 (234) 567-89</a>
+                <a href="mailto:info@example.com"><i class="fa-solid fa-envelope"></i> info@example.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Address</h1>
+                <p>1234 Random Street, Cityville</p>
+                <p>Country: Randomland</p>
+                <p>ZIP: 56789</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navItems = document.querySelectorAll('#mainNav ul li');
+    
+        navItems.forEach(item => {
+            const anchor = item.querySelector('a'); 
+    
+            item.addEventListener('mouseover', () => {
+                anchor.style.color = '#880ED4';
+                item.style.backgroundColor = '#CBC3E3';
+                item.style.padding = '15px';
+                item.style.borderRadius = '10px';
+            });
+    
+            item.addEventListener('mouseout', () => {
+                anchor.style.color = ''; 
+                item.style.backgroundColor = '';
+                item.style.padding = '';
+                item.style.borderRadius = '';
+            });
+        });
+    </script>
+</body>
+</html>

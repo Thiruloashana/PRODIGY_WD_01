@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>  
+    <section>
+        <nav id="mainNav">
+            <div class="logo">
+                <h1>SHOOZ</h1>
+            </div>
+
+            <ul>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/product.html">Products</a></li>
+                <li><a href="/review.html">Review</a></li>
+                <li><a href="/services.html">Services</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+        </nav>
+    </section>
+
+    <div class="review">
+        <h1>Customer's<span>review</span></h1>
+        
+        <div class="review_box">
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image">
+                            <img src="image/gojo.jpeg">
+                        </div>
+
+                        <div class="name">
+                            <strong>Gojo Saturo</strong>
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        Ordered the Nike Air Max 270, and they're as iconic as described. The bold design 
+                        and cushioning make them stand out.Plus, the quick delivery was a pleasant surprise. 
+                        Definitely coming back for more kicks!
+                    </p>
+                </div>
+            </div>   
+
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image">
+                            <img src="image/zenitsu.jpeg">
+                        </div>
+
+                        <div class="name">
+                            <strong>zenitsu</strong>
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        "Just received my pair of Nike Air Zoom from this website, 
+                        and I'm in love! The cushioning is perfect for running, 
+                        and the sleek design adds a touch of style. Highly recommended!"
+                    </p>
+                </div>
+            </div>   
+
+            <div class="review_card">
+                <div class="card_top">
+                    <div class="profile">
+
+                        <div class="profile_image">
+                            <img src="image/kakashi.jpeg">
+                        </div>
+
+                        <div class="name">
+                            <strong>kakashi</strong>
+
+                            <div class="like">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="comment">
+                    <p>
+                        "These Nike React shoes are a game-changer for my workouts.
+                         The support they provide is unmatched, and the attention to detail
+                          in the design is impressive. Couldn't be happier with my purchase."
+                    </p>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <script>
+        const navItems = document.querySelectorAll('#mainNav ul li');
+    
+        navItems.forEach(item => {
+            const anchor = item.querySelector('a'); 
+    
+            item.addEventListener('mouseover', () => {
+                anchor.style.color = '#880ED4';
+                item.style.backgroundColor = '#CBC3E3';
+                item.style.padding = '15px';
+                item.style.borderRadius = '10px';
+            });
+    
+            item.addEventListener('mouseout', () => {
+                anchor.style.color = ''; 
+                item.style.backgroundColor = '';
+                item.style.padding = '';
+                item.style.borderRadius = '';
+            });
+        });
+    </script>
+</body>
+</html>
